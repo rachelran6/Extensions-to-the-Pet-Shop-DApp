@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="login.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rachel's Pet Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">APS1050 Pet Shop</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="adopt.html">Adopt</a></li>
+          <li><a href="supply.html">Supply</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="login.html">Admin</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Welcome to Rachel's pet shop!</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div class="bodyText">
+        This is a DApp extended from the Pet Shop Tutorial, please see: <a href="https://www.trufflesuite.com/tutorials/pet-shop">https://www.trufflesuite.com/tutorials/pet-shop</a>.<br><br>
+        There are five tabs on the navigation bar: Home, Adopt, Supply, Donate, Admin. <br>
+        The 'Home' tab will lead you to an introduction of this DApp. <br>You can adopt a pet on page 'Adopt'.
+         <br>You can acquire a supply on page 'Supply'. <br>The 'Donate' tab will take you to the page where you can donate an item.
+         <br>If you are an administrator, you can go to 'Admin' page and login. <br>Username: Rachel<br>Password: rachel<br>
+         After login, you will be able to add an offline donation record to the system.
+
+      </div>
+    </div>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

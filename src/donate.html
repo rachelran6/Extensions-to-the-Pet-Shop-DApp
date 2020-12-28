@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="login.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rachel's Pet Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand">APS1050 Pet Shop</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="supply.html">Supply</a></li>
+                <li class="active"><a href="#">Donate</a></li>
+                <li><a href="login.html">Admin</a></li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Choose an item to donate:</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <form name="addDonation" id="addDonation">
+        <div class="container">
+          <label><b>Please choose an item from the list to donate:   </b></label>
+          <select id="selectedItem">
+            <option value="1" selected="selected">Dry Food</option>
+            <option value="2">Wet Food</option>
+            <option value="3">Toy</option>
+            <option value="4">Wooden Home</option>
+            <option value="5">Harness</option>
+            <option value="6">Clothing</option>
+            <option value="7">Treats</option>
+            <option value="8">Carrier</option>
+          </select>
+          <br><br>
+          <label for="preferredName"><b>Preferred Donor Name</b></label>
+          <input type="text" placeholder="Enter Preferred Name" name="preferredName" required>
+          <br><br>
+          <label for="preferredDate"><b>Donate Date</b></label>
+          <input type="text" placeholder="Enter Donate Date" name="preferredDate" required>
+          <br><br>
+          <div style="text-align:center;">
+            <button class="btn-personal-donate" type="button" style="font-weight:bold;">Donate</button>
+            <br>
+            <br>
+            <button type="reset" style="font-weight:bold;">Clear Textfield</button>
+          </div>   
+        </div>
+      </form>
+
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">You have donated:</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="newDonationRow" class="row">
+        <!-- Newly added donations LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="newDonationTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default panel-new-donation">
+          <div class="panel-heading">
+            <h3 class="panel-title">Food</h3>
+          </div>
+          <div class="panel-body">
+            <!-- <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+            <br/><br/> -->
+            <strong>Series Number</strong>: <span class="item-id">0</span><br/>
+            <strong>Donated by</strong>: <span class="item-donatedBy">Rachel</span><br/>
+            <strong>Donated on</strong>: <span class="item-donatedOn">Mar 31, 2020</span><br/>
+            <!-- <button class="btn btn-default btn-adopt" type="button" data-id="0">Adopt</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="login.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rachel's Pet Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">APS1050 Pet Shop</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html">Adopt</a></li>
+          <li><a href="supply.html">Supply</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li class="active"><a href="#">Admin</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Welcome to the admin page! <br>Add an offline donation to the system: </h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <form name="addSupply" id="addSupply">
+        <div class="container1">
+          <label for="itemName"><b>Item Name</b></label>
+          <input type="text" placeholder="Enter Item Name" name="itemName" required>
+          <br><br>
+          <label for="description"><b>Description</b></label>
+          <input type="text" placeholder="Enter Item Description" name="description" required>
+          <br><br>
+          <label for="donor"><b>Donor</b></label>
+          <input type="text" placeholder="Enter Donor" name="donor" required>
+          <br><br>
+          <label for="date"><b>Donate Date</b></label>
+          <input type="text" placeholder="Enter Donate Date" name="date" required>
+          <br><br>
+          <div style="text-align:center;">
+            <button class="btn-donate" type="button" style="font-weight:bold;">Add Donation</button>
+            <br>
+            <br>
+            <button type="reset" style="font-weight:bold;">Clear Textfield</button>
+          </div> 
+        </div>
+      </form>
+      
+    </div>
+
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Recently added supplies: </h1>  
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="newSuppliesRow" class="row">
+        <!-- NEWLY ADDED SUPPLIES LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="newSupplyTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-6">
+        <div class="panel panel-default panel-new-supply">
+          <div class="panel-heading">
+            <h3 class="panel-title">Food</h3>
+          </div>
+          <div class="panel-body">
+            <!-- <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+            <br/><br/> -->
+            <strong>Description</strong>: <span class="item-description">Dry Food</span><br/>
+            <strong>Donated by</strong>: <span class="item-donatedBy">Rachel</span><br/>
+            <strong>Donated on</strong>: <span class="item-donatedOn">Mar 31, 2020</span><br/>
+            <strong>Address</strong>: <span class="item-address">000000</span><br/>
+            <!-- <button class="btn btn-default btn-acquire" type="button" data-id="0">Acquire</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+[
+    {
+      "id": 0,
+      "name": "Food",
+      "picture": "images/Wet_food.png",
+      "description": "Wet food",
+      "donatedBy": "Dave",
+      "donatedOn": "Apr 4, 2020"
+    },
+    {
+      "id": 1,
+      "name": "Food",
+      "picture": "images/wet_food.png",
+      "description": "Wet food",
+      "donatedBy": "Dave",
+      "donatedOn": "Apr 4, 2020"
+    },
+    {
+      "id": 2,
+      "name": "Food",
+      "picture": "images/wet_food.png",
+      "description": "Wet food",
+      "donatedBy": "Dave",
+      "donatedOn": "Nov 11, 2020"
+    },
+    {
+      "id": 3,
+      "name": "Food",
+      "picture": "images/raw_food.png",
+      "description": "Raw food",
+      "donatedBy": "Lisa",
+      "donatedOn": "Dec 22, 2020"
+    },
+    {
+      "id": 4,
+      "name": "Food",
+      "picture": "images/raw_food.png",
+      "description": "Raw food",
+      "donatedBy": "Lisa",
+      "donatedOn": "Dec 28, 2020"
+    },
+    {
+      "id": 5,
+      "name": "Food",
+        "picture": "images/dry_food.png",
+        "description": "Dry food",
+        "donatedBy": "Sherry",
+        "donatedOn": "Dec 14, 2020"
+    },
+    {
+      "id": 6,
+      "name": "Food",
+        "picture": "images/treats_food.png",
+        "description": "Treats",
+        "donatedBy": "Sherry",
+        "donatedOn": "Dec 14, 2020"
+    },
+    {
+      "id": 7,
+      "name": "Food",
+        "picture": "images/treats_food.png",
+        "description": "Treats",
+        "donatedBy": "Mary",
+        "donatedOn": "Nov 18, 2020"
+    },
+    {
+      "id": 8,
+      "name": "Food",
+        "picture": "images/chews_food.png",
+        "description": "Chews for adult dog",
+        "donatedBy": "Mary",
+        "donatedOn": "Nov 18, 2020"
+    },
+    {
+      "id": 9,
+      "name": "Clothing",
+        "picture": "images/clothing.png",
+        "description": "Toronto Maple Leafs Sweater",
+        "donatedBy": "David",
+        "donatedOn": "Sep 26, 2020"
+    },
+    {
+      "id": 10,
+      "name": "Collar",
+      "picture": "images/collar.png",
+        "description": "Canine Equipment Quick Release",
+        "donatedBy": "Peter",
+        "donatedOn": "Nov 4, 2020"
+    },
+    {
+      "id": 11,
+      "name": "Bowl",
+      "picture": "images/bowl.png",
+        "description": "Stainless Steel Non-Skid Bowl",
+        "donatedBy": "Mary",
+        "donatedOn": "Nov 18, 2020"
+    },
+    {
+      "id": 12,
+      "name": "Carrier",
+      "picture": "images/carrier.png",
+        "description": "Dog Carrier",
+        "donatedBy": "Ellen",
+        "donatedOn": "Aug 12, 2020"
+    },
+    {
+      "id": 13,
+      "name": "Toy",
+      "picture": "images/football_toy.png",
+      "description": "Air Kong Football",
+      "donatedBy": "Ellen",
+      "donatedOn": "Aug 18, 2020"
+    },
+    {
+      "id": 14,
+      "name": "Toy",
+      "picture": "images/hedgehog_toy.png",
+      "description": "Hedgehog Dog Toy",
+      "donatedBy": "Max",
+      "donatedOn": "Jun 22, 2020"
+    },
+    {
+      "id": 15,
+      "name": "Harness",
+      "picture": "images/harness.png",
+      "description": "Adult Dog Harness",
+      "donatedBy": "Steve",
+      "donatedOn": "July 17, 2020"
+    }
+  ]
+  

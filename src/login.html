@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="login.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rachel's Pet Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand">APS1050 Pet Shop</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="supply.html">Supply</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li class="active"><a href="#">Admin</a></li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Please log in as an administrator.</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <form name="login">
+        <!-- Username<input type="text" name="userid"/>
+        Password<input type="password" name="pswrd"/>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Cancel"/> -->
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <br><br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <br><br>
+          <div style="text-align:center;">
+            <button type="button" onclick="check(this.form)" style="font-weight:bold;">Login</button>
+            <br>
+            <br>
+            <button type="reset" style="font-weight:bold;">Cancel</button>
+          </div> 
+        </div>
+      </form>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+    <script language="javascript">
+      function check(form)/*function to check userId & password*/
+      {
+       /*the following code checks whether the entered userId and password are matching*/
+       if(form.uname.value == "Rachel" && form.psw.value == "rachel")
+        {
+          window.location.replace('admin.html')/*opens the target page while Id & password matches*/
+        }
+       else
+       {
+         alert("Wrong Password or Username")/*displays error message*/
+        }
+      }
+      </script>
+  </body>
+</html>
